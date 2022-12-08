@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-image: url(../images/day.jpg);
+    background-size: cover;
+background-position: bottom;
+}
+
+.forecastWrapper {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(248, 244, 244);
+    font-weight: 200;
+    padding-top: 40px;
+}
+.wrapper__header {
+}
+.header-title {
+    font-size: 50px;
+}
+.forecast__body {
+    
+}
+.body-gradus {
+    font-size: 200px;
+    position: relative;
+}
+
+.body-gradus::after{
+    content: '°C';
+    font-size: 40px;
+    top: 24%;
+    /* right: 25%; */
+    position: absolute;
+}
+.body-type {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    width: 180px;
+    /* justify-content: space-between; */
+    width: fit-content;
+    
+    
+}
+.body-type span{
+    flex: 1 1 auto;
+    min-width: fit-content;
+    padding-left: 10px;
+}
+.image{
+    height: 100px;
+    min-width: 80px;
+    flex:  1 1 30%;
+    position: relative;
+}
+.body-type img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    /* margin-right: 10px; */
+    
+}
+.forecast__footer {
+}
+
+.data{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(248, 244, 244);
+    font-weight: 200;
+    font-size: 50px;
+    margin-top: 50px;
+    padding-left: 30px;
+}
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
